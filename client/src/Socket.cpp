@@ -6,7 +6,9 @@ Socket::Socket( const std::string& server_url ) :
 {
 }
 
-bool Socket::http_get( const std::string& file, const std::string& data, std::string& response )
+bool Socket::http_get( const std::string& file,
+                       const std::string& data,
+                       std::string&       response )
 {
     if( file.empty() || data.empty() ) {
         return false;
@@ -33,11 +35,15 @@ bool Socket::http_get( const std::string& file, const std::string& data, std::st
         return free_socket_data();
     }
 
-    m_Socket = socket( addr_info->ai_family, addr_info->ai_socktype, addr_info->ai_protocol );
+    m_Socket = socket( addr_info->ai_family,
+                       addr_info->ai_socktype,
+                       addr_info->ai_protocol );
     if( m_Socket == SOCKET_INVALID ) {
         return free_socket_data( true, false, reinterpret_cast<void**>( &addr_info ) );
     }
-    if( connect( m_Socket, addr_info->ai_addr, static_cast<int32_t>( addr_info->ai_addrlen ) ) != 0 ) {
+    if( connect( m_Socket,
+                 addr_info->ai_addr,
+                 static_cast<int32_t>( addr_info->ai_addrlen ) ) != 0 ) {
         return free_socket_data( true, true, reinterpret_cast<void**>( &addr_info ) );
     }
     freeaddrinfo( addr_info );
@@ -49,13 +55,17 @@ bool Socket::http_get( const std::string& file, const std::string& data, std::st
     http_header.append( "\r\n\r\n" );
 
     std::array<char, 512> buffer;
-    if( send( m_Socket, http_header.c_str(), static_cast<int32_t>( http_header.size() ), 0 ) == SOCKET_ERROR ) {
+    if( send( m_Socket,
+              http_header.c_str(),
+              static_cast<int32_t>( http_header.size() ), 0 ) == SOCKET_ERROR ) {
         return free_socket_data( true, true );
     }
     
     size_t bytes_received;
     do {
-        bytes_received = static_cast<size_t>( recv( m_Socket, buffer.data(), buffer.size(), 0 ) );
+        bytes_received = static_cast<size_t>( recv( m_Socket,
+                                                    buffer.data(),
+                                                    buffer.size(), 0 ) );
         response.append( buffer.data(), bytes_received );
 
     } while( bytes_received > 0 );    
@@ -78,7 +88,9 @@ bool Socket::is_valid() const
 }
 
 template<bool RET>
-bool Socket::free_socket_data( const bool clear, const bool disconnect, void** addr_info_data )
+bool Socket::free_socket_data( const bool clear,
+                               const bool disconnect,
+                               void**     addr_info_data )
 {
     if( addr_info_data && *addr_info_data ) {
         freeaddrinfo( reinterpret_cast<addrinfo*>( *addr_info_data ) );
