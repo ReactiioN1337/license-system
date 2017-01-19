@@ -29,3 +29,15 @@
 #include <json.hpp>
 /// tfm::format, tfm::printf, tfm::printIn
 #include <tinyformat.hpp>
+
+/// crypto++ include files
+#include <crypto++/cryptlib.h>
+#include <crypto++/aes.h>
+#include <crypto++/base64.h>
+#include <crypto++/filters.h>
+#include <crypto++/aes.h>
+#include <crypto++/modes.h>
+#include <crypto++/hex.h>
+#include <crypto++/osrng.h>
+#include <crypto++/rsa.h>
+#include <crypto++/gcm.h>
