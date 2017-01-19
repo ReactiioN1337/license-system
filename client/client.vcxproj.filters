@@ -29,6 +29,9 @@
     <Filter Include="crypto\AES">
       <UniqueIdentifier>{f9523dd2-2c49-43ac-95c3-153e2fbea45e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="contrib\jarro2783">
+      <UniqueIdentifier>{d0c2fecb-a3d8-41db-9f7c-e1002de71f0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.hpp">
@@ -52,6 +55,9 @@
     <ClInclude Include="include\crypto\AES.hpp">
       <Filter>crypto\AES</Filter>
     </ClInclude>
+    <ClInclude Include="contrib\jarro2783\cxxopts.hpp">
+      <Filter>contrib\jarro2783</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Socket.cpp">
@@ -69,5 +75,8 @@
     <ClCompile Include="src\AES.cpp">
       <Filter>crypto\AES</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
   </ItemGroup>
 </Project>

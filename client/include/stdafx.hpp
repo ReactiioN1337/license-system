@@ -41,9 +41,11 @@
 #include "../contrib/cryptopp565/crypto++/rsa.h"
 #include "../contrib/cryptopp565/crypto++/gcm.h"
 /// nlohmann::json
-#include <../contrib/nlohmann/json.hpp>
+#include "../contrib/nlohmann/json.hpp"
 /// tfm::format, tfm::printf, tfm::printIn
-#include <../contrib/tinyformat/tinyformat.hpp>
+#include "../contrib/tinyformat/tinyformat.hpp"
+/// argument handling
+#include "../contrib/jarro2783/cxxopts.hpp"
 #else
 /// crypto++ include files
 #include <crypto++/cryptlib.h>
@@ -59,5 +61,6 @@
 #include <json.hpp>
 /// tfm::format, tfm::printf, tfm::printIn
 #include <tinyformat.hpp>
-
+/// argument handling
+#include <cxxopts.hpp>
 #endif

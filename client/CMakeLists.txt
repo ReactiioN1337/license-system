@@ -9,6 +9,7 @@ set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++14" )
 include_directories( "include"  )
 include_directories( "contrib/nlohmann"  )
 include_directories( "contrib/tinyformat"  )
+include_directories( "contrib/jarro2783"  )
 
 add_definitions( -DWEB_ENCODER )
 
