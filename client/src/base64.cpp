@@ -1,4 +1,5 @@
-#include <base64.hpp>
+#include <crypto/base64.hpp>
+using namespace crypto;
 
 std::string base64::url_encode( const std::string& plain )
 {

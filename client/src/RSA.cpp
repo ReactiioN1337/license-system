@@ -1,5 +1,6 @@
-#include <RSA.hpp>
-#include <base64.hpp>
+#include <crypto/RSA.hpp>
+#include <crypto/base64.hpp>
+using namespace crypto;
 
 bool RSA::KeyPair::load_private( const std::string& key, const bool as_base64 )
 {
