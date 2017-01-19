@@ -26,6 +26,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="crypto\AES">
+      <UniqueIdentifier>{f9523dd2-2c49-43ac-95c3-153e2fbea45e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.hpp">
@@ -40,11 +43,14 @@
     <ClInclude Include="include\Socket.hpp">
       <Filter>Socket</Filter>
     </ClInclude>
-    <ClInclude Include="include\RSA.hpp">
+    <ClInclude Include="include\crypto\base64.hpp">
+      <Filter>crypto\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\RSA.hpp">
       <Filter>crypto\RSA</Filter>
     </ClInclude>
-    <ClInclude Include="include\base64.hpp">
-      <Filter>crypto\base64</Filter>
+    <ClInclude Include="include\crypto\AES.hpp">
+      <Filter>crypto\AES</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Header/Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AES.cpp">
+      <Filter>crypto\AES</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
