@@ -1,4 +1,17 @@
 #pragma once
+#ifdef _MSC_VER
+/// Otherwise min/max in json won't work without a minimal modification.
+#define NOMINMAX
+#endif
+
+#ifndef WEB_ENCODER
+/// Windows socket
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#pragma comment( lib, "Ws2_32.lib" )
+/// WindowsAPI
+#include <Windows.h>
+#endif
 
 /// std::array
 #include <array>
