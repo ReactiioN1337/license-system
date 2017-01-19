@@ -14,7 +14,7 @@ public:
     ///-------------------------------------------------------------------------------------------------
     /// URL encode.
     ///
-    /// @author tominko (https://stackoverflow.com/a/4823686)
+    /// @author xperroni (https://stackoverflow.com/a/17708801)
     /// @date   19.01.2017
     ///
     /// @param  input   The input.
