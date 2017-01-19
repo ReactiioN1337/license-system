@@ -9,9 +9,30 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Header Files\contrib">
+      <UniqueIdentifier>{3b5a71a1-5aa3-4790-90cf-343d86f5bd9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\contrib\nlohmann">
+      <UniqueIdentifier>{9e96ec05-37b3-4426-8d2f-0a89c7f13932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\contrib\tinyformat">
+      <UniqueIdentifier>{3af25106-8410-471e-8a7e-20811de9f7a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\stdafx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\nlohmann\json.hpp">
+      <Filter>Header Files\contrib\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\tinyformat\tinyformat.hpp">
+      <Filter>Header Files\contrib\tinyformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
