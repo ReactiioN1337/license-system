@@ -174,10 +174,12 @@
   <ItemGroup>
     <ClInclude Include="contrib\nlohmann\json.hpp" />
     <ClInclude Include="contrib\tinyformat\tinyformat.hpp" />
+    <ClInclude Include="include\Socket.hpp" />
     <ClInclude Include="include\stdafx.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Socket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="contrib\cryptopp565\crypto++\cryptlib.vcxproj">
