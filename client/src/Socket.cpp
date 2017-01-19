@@ -1,4 +1,4 @@
-#ifndef ASD
+#ifndef WEB_ENCODER
 #include <Socket.hpp>
 
 Socket::Socket( const std::string& server_url ) :
