@@ -35,7 +35,6 @@
 #include <crypto++/aes.h>
 #include <crypto++/base64.h>
 #include <crypto++/filters.h>
-#include <crypto++/aes.h>
 #include <crypto++/modes.h>
 #include <crypto++/hex.h>
 #include <crypto++/osrng.h>
