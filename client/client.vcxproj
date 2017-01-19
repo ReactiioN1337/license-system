@@ -174,11 +174,15 @@
   <ItemGroup>
     <ClInclude Include="contrib\nlohmann\json.hpp" />
     <ClInclude Include="contrib\tinyformat\tinyformat.hpp" />
+    <ClInclude Include="include\base64.hpp" />
+    <ClInclude Include="include\RSA.hpp" />
     <ClInclude Include="include\Socket.hpp" />
     <ClInclude Include="include\stdafx.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\base64.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\RSA.cpp" />
     <ClCompile Include="src\Socket.cpp" />
   </ItemGroup>
   <ItemGroup>
