@@ -46,6 +46,26 @@ std::string base64::encode( const std::string& plain, bool urlEncode )
     return encoded;
 }
 
+std::string base64::encode( const uint8_t* data, const size_t length, const bool encode_for_url )
+{
+    std::string encoded;
+    if( data && length > 0 ) {
+        try {
+            CryptoPP::ArraySource ss( data, length, true,
+                                      new CryptoPP::Base64Encoder(
+                                      new CryptoPP::StringSink( encoded ),
+                                      false ) );
+            if( encode_for_url ) {
+                return url_encode( encoded );
+            }
+        }
+        catch( const CryptoPP::Exception& e ) {
+            tfm::printfln( "base64::encode() throwed an exception from CryptoPP: %s", e.what() );
+        }
+    }
+    return encoded;
+}
+
 std::string base64::decode( const std::string& encoded )
 {
     std::string plain;
@@ -60,4 +80,10 @@ std::string base64::decode( const std::string& encoded )
         }
     }    
     return plain;
+}
+
+base64::Binary_t base64::decode_binary( const std::string& encoded )
+{
+    const auto plain = decode( encoded );
+    return Binary_t( plain.begin(), plain.end() );
 }
