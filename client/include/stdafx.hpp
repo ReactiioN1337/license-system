@@ -20,6 +20,8 @@
 #include <array>
 /// int64_t
 #include <cstdint>
+/// std::time_t, std::localtime
+#include <ctime>
 /// std::map
 #include <map>
 /// std::stringstream
