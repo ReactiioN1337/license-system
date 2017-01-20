@@ -32,6 +32,9 @@
     <Filter Include="contrib\jarro2783">
       <UniqueIdentifier>{d0c2fecb-a3d8-41db-9f7c-e1002de71f0d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header/Source Files\WebEncoder">
+      <UniqueIdentifier>{6f223f24-4c12-4cc2-a712-7724ecef5fbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.hpp">
@@ -58,6 +61,9 @@
     <ClInclude Include="contrib\jarro2783\cxxopts.hpp">
       <Filter>contrib\jarro2783</Filter>
     </ClInclude>
+    <ClInclude Include="include\WebEncoder.hpp">
+      <Filter>Header/Source Files\WebEncoder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Socket.cpp">
@@ -74,6 +80,9 @@
     </ClCompile>
     <ClCompile Include="src\AES.cpp">
       <Filter>crypto\AES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WebEncoder.cpp">
+      <Filter>Header/Source Files\WebEncoder</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
