@@ -1,6 +1,7 @@
 Debug/
 Release/
 ipch
+CMakeLists.txt
 
 *.db
 *.opendb
