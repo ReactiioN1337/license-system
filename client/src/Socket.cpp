@@ -1,6 +1,6 @@
-#ifndef WEB_ENCODER
 #include <Socket.hpp>
 
+#ifndef WEB_ENCODER
 Socket::Socket( const std::string& server_url ) :
     m_ServerUrl( server_url )
 {

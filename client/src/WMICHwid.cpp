@@ -1,5 +1,5 @@
-#ifndef WEB_ENCODER
 #include <WMICHwid.hpp>
+#ifndef WEB_ENCODER
 
 bool WMICHwid::query()
 {
