@@ -6,7 +6,7 @@ namespace crypto {
 ///-------------------------------------------------------------------------------------------------
 /// Base64 wrapper class for the crypto++ library.
 ///
-/// @author Michael
+/// @author ReactiioN (https://github.com/ReactiioN1337)
 /// @date   19.01.2017
 ///-------------------------------------------------------------------------------------------------
 class base64
