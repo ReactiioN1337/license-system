@@ -58,11 +58,10 @@ int32_t WebEncoder::handle_encryption()
         return EXIT_FAILURE;
     }
     if( rsa ) {
-        if( !m_Options.count( "public" ) || !m_Options.count( "private" ) ) {
+        if( !m_Options.count( "public" ) ) {
             return EXIT_FAILURE;
         }
-        if( !m_RSA.load_public( m_Options[ "public" ].as<std::string>() ) ||
-            !m_RSA.load_private( m_Options[ "private" ].as<std::string>() ) ) {
+        if( !m_RSA.load_public( m_Options[ "public" ].as<std::string>() ) ) {
             return EXIT_FAILURE;
         }
     }
@@ -104,11 +103,10 @@ int32_t WebEncoder::handle_decryption()
         return EXIT_FAILURE;
     }
     if( rsa ) {
-        if( !m_Options.count( "public" ) || !m_Options.count( "private" ) ) {
+        if( !m_Options.count( "private" ) ) {
             return EXIT_FAILURE;
         }
-        if( !m_RSA.load_public( m_Options[ "public" ].as<std::string>() ) ||
-            !m_RSA.load_private( m_Options[ "private" ].as<std::string>() ) ) {
+        if( !m_RSA.load_private( m_Options[ "private" ].as<std::string>() ) ) {
             return EXIT_FAILURE;
         }
     }
