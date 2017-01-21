@@ -95,6 +95,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="CMakeLists.txt" />
+    <None Include="unix.sh" />
   </ItemGroup>
 </Project>
