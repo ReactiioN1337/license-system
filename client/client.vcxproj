@@ -181,6 +181,7 @@
     <ClInclude Include="include\Socket.hpp" />
     <ClInclude Include="include\stdafx.hpp" />
     <ClInclude Include="include\WebEncoder.hpp" />
+    <ClInclude Include="include\WMICHwid.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AES.cpp" />
@@ -189,6 +190,7 @@
     <ClCompile Include="src\RSA.cpp" />
     <ClCompile Include="src\Socket.cpp" />
     <ClCompile Include="src\WebEncoder.cpp" />
+    <ClCompile Include="src\WMICHwid.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="contrib\cryptopp565\crypto++\cryptlib.vcxproj">

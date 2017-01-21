@@ -35,6 +35,9 @@
     <Filter Include="Header/Source Files\WebEncoder">
       <UniqueIdentifier>{6f223f24-4c12-4cc2-a712-7724ecef5fbf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header/Source Files\WMICHwid">
+      <UniqueIdentifier>{4025c855-f103-4fa1-a2ee-15211cfc1244}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.hpp">
@@ -64,6 +67,9 @@
     <ClInclude Include="include\WebEncoder.hpp">
       <Filter>Header/Source Files\WebEncoder</Filter>
     </ClInclude>
+    <ClInclude Include="include\WMICHwid.hpp">
+      <Filter>Header/Source Files\WMICHwid</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Socket.cpp">
@@ -83,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="src\WebEncoder.cpp">
       <Filter>Header/Source Files\WebEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WMICHwid.cpp">
+      <Filter>Header/Source Files\WMICHwid</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
