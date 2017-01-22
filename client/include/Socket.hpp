@@ -8,7 +8,7 @@ class Socket
 public:
     /// Same as under MSVC: INVALID_SOCKET
     /// (equal to SOCKET_ERROR, only for unsigned types)
-    static constexpr uintptr_t SOCKET_INVALID = ~0;
+    static constexpr uintptr_t SOCKET_INVALID = static_cast<uintptr_t>( ~0 );
 
 private:
     /// unix may needs a different type, I haven't checked it yet.
