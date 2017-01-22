@@ -17,12 +17,12 @@ class Crypto
     /// @return     The AES cipher if success, empty string otherwise.
     ///-------------------------------------------------------------------------------------------------
     static public function aes_encrypt($input, $key, $iv, $url_encode = false) {
-        $command = sprintf("cd %s && ./%s -e \"aes\" -i \"%s\" --key \"%s\" --iv \"%s\"",
-                           Config::Encoder_Path,
+        $command = sprintf("cd %s && ./%s -e \"aes\" -i %s --key %s --iv %s",
+                           escapeshellarg(Config::Encoder_Path),
                            Config::Encoder_Name,
-                           $input,
-                           $key,
-                           $iv
+                           escapeshellarg($input),
+                           escapeshellarg($key),
+                           escapeshellarg($iv)
         );
         if($url_encode) {
             $command = sprintf("$s -u", $command);
@@ -40,12 +40,12 @@ class Crypto
     /// @return     The plain string if success, empty string otherwise.
     ///-------------------------------------------------------------------------------------------------
     static public function aes_decrypt($cipher, $key, $iv) {
-        $command = sprintf("cd %s && ./%s -d \"aes\" -i \"%s\" --key \"%s\" --iv \"%s\"",
-                           Config::Encoder_Path,
+        $command = sprintf("cd %s && ./%s -d \"aes\" -i %s --key %s --iv %s",
+                           escapeshellarg(Config::Encoder_Path),
                            Config::Encoder_Name,
-                           $cipher,
-                           $key,
-                           $iv
+                           escapeshellarg($cipher),
+                           escapeshellarg($key),
+                           escapeshellarg($iv)
         );
         return exec($command);
     }
@@ -59,11 +59,11 @@ class Crypto
     /// @return     The RSA cipher if success, empty string otherwise.
     ///-------------------------------------------------------------------------------------------------
     static public function rsa_encrypt($input, $public_key) {
-        $command = sprintf("cd %s && ./%s -e \"rsa\" -i \"%s\" --public \"%s\"",
-                           Config::Encoder_Path,
+        $command = sprintf("cd %s && ./%s -e \"rsa\" -i %s --public %s",
+                           escapeshellarg(Config::Encoder_Path),
                            Config::Encoder_Name,
-                           $input,
-                           $public_key
+                           escapeshellarg($input),
+                           escapeshellarg($public_key)
         );
         return exec($command);
     }
@@ -77,11 +77,11 @@ class Crypto
     /// @return     The plain text if success, empty string otherwise.
     ///-------------------------------------------------------------------------------------------------
     static public function rsa_decrypt($cipher, $private_key) {
-        $command = sprintf("cd %s && ./%s -d \"rsa\" -i \"%s\" --private \"%s\"",
-                           Config::Encoder_Path,
+        $command = sprintf("cd %s && ./%s -d \"rsa\" -i %s --private %s",
+                           escapeshellarg(Config::Encoder_Path),
                            Config::Encoder_Name,
-                           $cipher,
-                           $private_key
+                           escapeshellarg($cipher),
+                           escapeshellarg($private_key)
         );
         return exec($command);
     }
@@ -93,7 +93,7 @@ class Crypto
     ///-------------------------------------------------------------------------------------------------
     static public function generate_aes_key_pair() {
         $command = sprintf("cd %s && ./%s -g",
-                           Config::Encoder_Path,
+                           escapeshellarg(Config::Encoder_Path),
                            Config::Encoder_Name
         );
         exec($command);
