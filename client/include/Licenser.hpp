@@ -32,7 +32,7 @@ enum class eRequest : size_t
 class Licenser
 {
     /// The PHP file name on the server.
-    static constexpr char* PHP_FILE = "test.php";
+    static constexpr char* PHP_FILE = "auth.php";
 
     /// The get parameter.
     static constexpr char* GET_PARAMETER = "data";
