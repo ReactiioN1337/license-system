@@ -38,6 +38,9 @@
     <Filter Include="Header/Source Files\WMICHwid">
       <UniqueIdentifier>{4025c855-f103-4fa1-a2ee-15211cfc1244}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header/Source Files\WMICHwid\Licenser">
+      <UniqueIdentifier>{e5d86386-16c3-428f-95f4-762302efbbf0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\stdafx.hpp">
@@ -70,6 +73,9 @@
     <ClInclude Include="include\WMICHwid.hpp">
       <Filter>Header/Source Files\WMICHwid</Filter>
     </ClInclude>
+    <ClInclude Include="include\Licenser.hpp">
+      <Filter>Header/Source Files\WMICHwid\Licenser</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Socket.cpp">
@@ -92,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="src\WMICHwid.cpp">
       <Filter>Header/Source Files\WMICHwid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Licenser.cpp">
+      <Filter>Header/Source Files\WMICHwid\Licenser</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
