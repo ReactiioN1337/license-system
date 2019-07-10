@@ -569,3 +569,7 @@ Gets the correct username and date added. This is a user-friendly `GET`-request 
   }
 }
 ```
+
+## Credits
+
+- @validatorjs ([isBase64](https://github.com/validatorjs/validator.js/blob/master/src/lib/isBase64.js))
