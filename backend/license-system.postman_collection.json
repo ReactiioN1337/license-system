@@ -1,0 +1,604 @@
+{
+	"info": {
+		"_postman_id": "40b3daf0-d2de-44e4-8820-90a1a4fa158a",
+		"name": "license-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"test-user\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/addUser",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"addUser"
+					]
+				},
+				"description": "# addUser\n\nAdds a new user to the database.\n\n## body\n\n```JSON\n{\n\t\"name\": \"\",\n\t\"token\": \"\"\n}\n```\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "delUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"ReactiioN\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/delUser",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"delUser"
+					]
+				},
+				"description": "# delUser\n\nDelets an user from the database.\n\n## body\n\n```JSON\n{\n\t\"name\": \"\",\n\t\"token\": \"\"\n}\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "banUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"ReactiioN\",\n  \"date\": 0\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/banUser",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"banUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetHwid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"ReactiioN\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/resetHwid",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"resetHwid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setApiAccess",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"ReactiioN\",\n  \"level\": 3\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/setApiAccess",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"setApiAccess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"unleashed-csgo\",\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"active\": true,\n  \"file_name\": \"lach.bin\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/addProduct",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"addProduct"
+					]
+				},
+				"description": "# addProduct\n\nAdds a new product to the database.\n\n## body\n\n```JSON\n{\n  \"name\": \"\",\n  \"token\": \"\",\n  \"active\": false,\n  \"file_name\": \"\"\n}\n```\n\n**Optional params**\n\n- `active`\n- `file_name`"
+			},
+			"response": []
+		},
+		{
+			"name": "delProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"unleashed-csgo\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/delProduct",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"delProduct"
+					]
+				},
+				"description": "# delProduct\n\nDeletes a product from the database.\n\n## body\n\n```JSON\n{\n  \"name\": \"\",\n  \"token\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "modifyProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"unleashed-csgo\",\n\t\"token\": \"9qcefgdr7xjbcmvb\",\n\t\"active\": false,\n\t\"file\": {\n\t\t\"name\": \"another_file_name.bin\",\n\t\t\"contents\": \"this should be the file contents as base64\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/modifyProduct",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"modifyProduct"
+					]
+				},
+				"description": "# modifyProduct\n\nUpdates the `active` status, `file_name` or `binary file`.\n\n## body\n\n```JSON\n{\n\t\"name\": \"\",\n\t\"token\": \"\",\n\t\"active\": false,\n\t\"file\": {\n\t\t\"name\": \"\",\n\t\t\"contents\": \"\"\n\t}\n}\n```\n\n**Optional values**\n\n- `active` - must be `boolean` and determines if the product is enabled or not.\n- `file` - must be an `object` and requires min. the `name` key.\n\t- `name` - must be `string` and determines the binary file name.\n\t- `contents` - must be `string` and represents the binary file as `base64` encoded string.\n"
+			},
+			"response": []
+		},
+		{
+			"name": "addSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\",\n  \"date\": {\n  \t\"begin\": -1,\n  \t\"end\": -1\n  }\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/addSubscription",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"addSubscription"
+					]
+				},
+				"description": "# addSubscription\n\nAdds a new product subscription for an user.\n\n## body\n\n```JSON\n{\n\t\"token\": \"\",\n\t\"username\": \"\",\n\t\"product\": \"\",\n\t\"date\": {\n\t\t\"begin\": 0,\n\t\t\"end\": 0\n\t}\n}\n```\n\n**Optional values**\n\n- `date` must be an `object` and contains `begin`, `end` or both.\n\t- `begin` - `number` the begin date as UNIX timestamp.\n\t- `end` - `number` the end date as UNIX timestamp.\n"
+			},
+			"response": []
+		},
+		{
+			"name": "modifySubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\",\n  \"date\": {\n  \t\"begin\": -1,\n  \t\"end\": -1\n  }\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/modifySubscription",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"modifySubscription"
+					]
+				},
+				"description": "# modifySubscription\n\nModiyfies user specific subscription.\n\n## body\n\n```JSON\n{\n\t\"token\": \"\",\n\t\"username\": \"\",\n\t\"product\": \"\",\n\t\"date\": {\n\t\t\"begin\": -1,\n\t\t\"end\": -1\n\t}\n}\n```\n\n**Optional values**\n\nInside the `date` object has to be `date` *and/or* `end`. Both keys should be a `number` and represents the date as unix timestamp. `-1` means the user has *lifetime* access."
+			},
+			"response": []
+		},
+		{
+			"name": "delSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/delSubscription",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"delSubscription"
+					]
+				},
+				"description": "# delSubscription\n\nDeletes a subscription for an user.\n\n## body\n\n```JSON\n{\n\t\"token\": \"\",\n\t\"username\": \"\",\n\t\"product\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "delSubscriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/delSubscriptions",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"delSubscriptions"
+					]
+				},
+				"description": "# delSubscriptions\n\nDeletes all user specified subscriptions.\n\n## body\n\n```JSON\n{\n\t\"token\": \"\",\n\t\"username\": \"\"\n}\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getUsers",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getUsers"
+					]
+				},
+				"description": "# getUsers\n\nGets a list with all user informations.\n\n## body\n\n```JSON\n{\n  \"token\": \"\"\n}\n```\n\n## Response\n\n```JSON\n{\n\t\"code\": 0,\n\t\"msg\": \"Success\",\n\t\"response\": [\n\t\t{\n\t\t\t\"id\": 0,\n\t\t\t\"username\": \"\",\n\t\t\t\"hwid_hash\": \"\",\n\t\t\t\"date_added\": 0,\n\t\t\t\"ban_date\": 0,\n\t\t\t\"api_access\": 0,\n\t\t\t\"api_token\": 0\n\t\t}\n\t]\n}\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\": \"9qcefgdr7xjbcmvb\",\n\t\"username\": \"ReactiioN\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getUser",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getUser"
+					]
+				},
+				"description": "# getUser\n\nGets user specified informations.\n\n## body\n\n```JSON\n{\n    \"token\": \"\",\n    \"username\": \"\"\n}\n```\n\n## Response\n\n```JSON\n{\n\t\"code\": 0,\n\t\"msg\": \"Success\",\n\t\"response\": {\n\t\t\"id\": 0,\n\t\t\"username\": \"\",\n\t\t\"hwid_hash\": \"\",\n\t\t\"date_added\": 0,\n\t\t\"ban_date\": 0,\n\t\t\"api_access\": 0,\n\t\t\"api_token\": \"\"\n\t}\n}\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "getProducts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getProducts",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"product\": \"unleashed-csgo\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getProduct",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getSubscription",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getSubscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSubscriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getSubscriptions",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getSubscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMyInformations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\": \"3ffdcaiori1ahkgc\"\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/getMyInformations",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"getMyInformations"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d6e88bc7-cd97-4eef-94ee-001f684373a2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0ce4ee27-26ad-4be4-ab54-3231c9e547b1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "6d819087-0f1d-4df4-8d01-7946e557bfd5",
+			"key": "hostname",
+			"value": "localhost",
+			"type": "string"
+		}
+	]
+}

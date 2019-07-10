@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "bluebird": "^3.5.5",
+    "body-parser": "^1.19.0",
+    "eslint-config-recommended": "^4.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "knack-sql": "^1.0.3",
+    "libsodium-wrappers-sumo": "^0.7.4",
+    "moment": "^2.24.0",
+    "node-psr-log": "^1.0.0",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
