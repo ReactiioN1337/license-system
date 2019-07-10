@@ -1,0 +1,7 @@
+[submodule "client/client/contrib/libsodium"]
+	path = client/client/contrib/libsodium
+	url = https://github.com/jedisct1/libsodium.git
+	branch = stable
+[submodule "client/client/contrib/json"]
+	path = client/client/contrib/json
+	url = https://github.com/nlohmann/json
