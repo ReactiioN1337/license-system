@@ -18,13 +18,13 @@ The whole backend has been tested with the following operation systems:
 - Windows 10 1803, 1809
 - Ubuntu Server 18.04
 
-|Dependency|tested with|
-|---|---|---|
-|[node.js](https://nodejs.org/en/)|12.6|
-|MySQL Server|5.6, 5.7|
-|[nginx](http://nginx.org/en/download.html)|1.17.1|
-|[yarn](https://yarnpkg.com/lang/en/)|1.14.0|
-|[Visual Studio 2017](https://docs.microsoft.com/en-gb/visualstudio/releasenotes/vs2017-relnotes)|Latest Version|
+Dependency | tested with
+:---: | :---:
+[node.js](https://nodejs.org/en/)|12.6
+MySQL Server | 5.6, 5.7
+[nginx](http://nginx.org/en/download.html) | 1.17.1
+[yarn](https://yarnpkg.com/lang/en/) | 1.14.0
+[Visual Studio 2017](https://docs.microsoft.com/en-gb/visualstudio/releasenotes/vs2017-relnotes) | Latest Version
 
 ## Installation
 
