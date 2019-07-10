@@ -3,7 +3,7 @@
 A proof of concept of a license system written in C++ and node.js. Communication is encrypted using a [sealed box](https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes).
 The keys for the responses are regenerated with each request. Thus only a known public key exists in the client.
 
-The only known vulnerability of the PoC is the HWID itself. The plain HWID is stored in the database instead of being generated and stored from several components and a user-specific salt, and obv. the used "hwid" itself.
+The only known vulnerability of the PoC is the HWID itself. The plain HWID is stored in the database instead of being generated and stored from several components and a user-specific salt, and obv. the used "hwid" itself. The socket token is not used right now but should be also sent from client to verify the data.
 
 For more informations, checkout the other README files.
 
