@@ -49,7 +49,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"ReactiioN\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+					"raw": "{\n  \"name\": \"test-user\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/delUser",
@@ -79,7 +79,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"ReactiioN\",\n  \"date\": 0\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"test-user\",\n  \"date\": 0\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/banUser",
@@ -108,7 +108,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"ReactiioN\"\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"test-user\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/resetHwid",
@@ -137,7 +137,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"ReactiioN\",\n  \"level\": 3\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"name\": \"test-user\",\n  \"level\": 3\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/setApiAccess",
@@ -166,7 +166,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"unleashed-csgo\",\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"active\": true,\n  \"file_name\": \"lach.bin\"\n}"
+					"raw": "{\n  \"name\": \"test-product\",\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"active\": true,\n  \"file_name\": \"lach.bin\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/addProduct",
@@ -196,7 +196,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"unleashed-csgo\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
+					"raw": "{\n  \"name\": \"test-product\",\n  \"token\": \"9qcefgdr7xjbcmvb\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/delProduct",
@@ -226,7 +226,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"unleashed-csgo\",\n\t\"token\": \"9qcefgdr7xjbcmvb\",\n\t\"active\": false,\n\t\"file\": {\n\t\t\"name\": \"another_file_name.bin\",\n\t\t\"contents\": \"this should be the file contents as base64\"\n\t}\n}"
+					"raw": "{\n\t\"name\": \"test-product\",\n\t\"token\": \"9qcefgdr7xjbcmvb\",\n\t\"active\": false,\n\t\"file\": {\n\t\t\"name\": \"another_file_name.bin\",\n\t\t\"contents\": \"this should be the file contents as base64\"\n\t}\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/modifyProduct",
@@ -256,7 +256,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\",\n  \"date\": {\n  \t\"begin\": -1,\n  \t\"end\": -1\n  }\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"test-user\",\n  \"product\": \"test-product\",\n  \"date\": {\n  \t\"begin\": -1,\n  \t\"end\": -1\n  }\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/addSubscription",
@@ -286,7 +286,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\",\n  \"date\": {\n  \t\"begin\": -1,\n  \t\"end\": -1\n  }\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"test-user\",\n  \"product\": \"test-product\",\n  \"date\": {\n  \t\"begin\": -1,\n  \t\"end\": -1\n  }\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/modifySubscription",
@@ -316,7 +316,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\"\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"test-user\",\n  \"product\": \"test-product\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/delSubscription",
@@ -346,7 +346,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\"\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"test-user\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/delSubscriptions",
@@ -406,7 +406,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"token\": \"9qcefgdr7xjbcmvb\",\n\t\"username\": \"ReactiioN\"\n}"
+					"raw": "{\n\t\"token\": \"9qcefgdr7xjbcmvb\",\n\t\"username\": \"test-user\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/getUser",
@@ -465,7 +465,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"product\": \"unleashed-csgo\"\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"product\": \"test-product\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/getProduct",
@@ -494,7 +494,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\"\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"test-user\",\n  \"product\": \"test-product\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/getSubscription",
@@ -523,7 +523,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"ReactiioN\",\n  \"product\": \"unleashed-csgo\"\n}"
+					"raw": "{\n  \"token\": \"9qcefgdr7xjbcmvb\",\n  \"username\": \"test-user\",\n  \"product\": \"test-product\"\n}"
 				},
 				"url": {
 					"raw": "{{hostname}}/api/getSubscriptions",
