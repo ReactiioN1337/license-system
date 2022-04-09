@@ -11,7 +11,7 @@
     "fs-extra": "^8.1.0",
     "knack-sql": "^1.0.3",
     "libsodium-wrappers-sumo": "^0.7.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-psr-log": "^1.0.0"
   },
   "devDependencies": {
